@@ -1,18 +1,16 @@
-public abstract class Animal {
-    protected String name;
-    protected String color;
-    protected int age;
-
-
-    Animal(String name, int age, String color){
+public class Animal {
+    String name;
+    static int man;
+    Animal(String name){
         this.name = name;
-        this.age = age;
-        this.color = color;
+        man++;
     }
 
-    void walk() {
-        System.out.println(name + " Ходит на лапках");
+    void run(){
+
     }
-    abstract void voice();
+
+    void swim(){
+
+    }
 }
-
