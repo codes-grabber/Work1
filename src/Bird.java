@@ -9,9 +9,6 @@ public class Bird extends Animal {
 
 
     void voice() {
-        System.out.println(this.name + " Чирик");
-    }
-    void walk() {
-        System.out.println(name + " Ходит на лапках");
+        System.out.println(this.name + " Чирикает");
     }
 }
