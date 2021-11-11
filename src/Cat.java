@@ -1,15 +1,10 @@
-public class Cat extends Animal{
+public class Cat extends Animal {
 
-    Cat(String name) {
-        super(name);
+    Cat(String name, int age, String color){
+        super(name, age, color);
     }
-
-    void run(int distance){
-        System.out.println( (distance >= 200) ? name + " столько не пробежит" : name + " пробежал " + distance + " м" );
+    void voice(){
+        System.out.println(name + " мяукает");
     }
-    void swim(int distance){
-        System.out.println(name + " не умеет плавать!");
-    }
-
 
 }
