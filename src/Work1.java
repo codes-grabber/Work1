@@ -17,13 +17,35 @@ public class Work1 {
         Animal[] zoo = {
                 new Bird("Chucha", 7, "red", 15),
                 new Snake("Нагайна", 50, "Пятнистая"),
+                new Parrot("Popugai", 4, "Желтый", 55),
                 new Cat("Dusia", 8, "Borring"),
                 new Dog("Sharik", 5, "Black")
         };
 
+        short myShort = 16;
+        byte myByte =(byte) myShort;
+
         for(Animal animal : zoo){
+            if (animal instanceof Parrot){
+                Parrot parrot = (Parrot) animal; // приводим animal к типу данных Parrot чтобы получить доступ с его методу speak
+                parrot.speak();
+            }
+
+
             animal.voice();
         }
+
+
+
+        Point p1 = new Point(1,1);
+        Point p2 = new Point(2,3);
+        double x = Point.getDistance(p1, p2);
+        System.out.println(x);
+
+        double x2 = p1.getDist(p2);
+        System.out.println(x2);
+
+
 
 
         //        Building firstBuilding = new Building();

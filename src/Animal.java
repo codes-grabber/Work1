@@ -1,7 +1,7 @@
 public abstract class Animal {
-    protected String name;
-    protected String color;
-    protected int age;
+    final protected String name;
+    final protected String color;
+    final protected int age;
 
 
     Animal(String name, int age, String color){

@@ -10,4 +10,7 @@ public class Snake extends Animal{
     void voice(){
         System.out.println(name + " шипит");
     }
+    void cap(){
+        System.out.println(name + " кусается");
+    }
 }
