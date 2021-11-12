@@ -1,5 +1,11 @@
+import planes.Plane;
+import java.util.*;
+
 public class Work1 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        java.util.Date utilDate = new java.util.Date();
+        //java.sql.Date sqlDate = new java.sql.Date();
 //        Bird bird = new Bird("Kesha", 5, "Yello", 56);
 //        System.out.println(bird.name);
 //        Parrot parrot = new Parrot("Popug", 6, "Green", 100);
@@ -44,6 +50,8 @@ public class Work1 {
 
         double x2 = p1.getDist(p2);
         System.out.println(x2);
+        p1.setX(10);
+        System.out.println(p1.getX());
 
 
 

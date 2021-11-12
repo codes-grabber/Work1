@@ -7,6 +7,14 @@ public class Point {
         this.y = y;
     }
 
+    public int getX(){
+        return x;
+    }
+
+    public void setX(int x){
+        this.x = x;
+    }
+
     public static double getDistance(Point p1, Point p2) {
         int dx = (p1.x - p2.x);
         int dy = (p1.y - p2.y);
